@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>azizrady — Personal site</title>
+  <meta name="description" content="Personal website of azizrady" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">azizrady</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Hello — I’m <span class="accent">azizrady</span></h1>
+        <p class="lead">I build things on the web. This is a simple GitHub Pages site you can edit in <code>index.html</code>.</p>
+        <p class="actions">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn ghost" href="https://github.com/azizrady" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>I'm a developer who enjoys creating small, practical web tools and learning new technologies. Use this template to showcase your work, blog, or portfolio.</p>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>Short description of a project. Link to repo or demo.</p>
+          <p><a href="#" class="link">View on GitHub →</a></p>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Short description of another project or demo.</p>
+          <p><a href="#" class="link">View on GitHub →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>If you'd like to reach me, send a message below or click the copy button to copy my email address.</p>
+
+      <form id="contact-form" class="contact-form" action="#" novalidate>
+        <label>
+          Your name
+          <input type="text" name="name" id="name" placeholder="Your name" required />
+        </label>
+        <label>
+          Your message
+          <textarea name="message" id="message" placeholder="Hi — I wanted to ask about..." required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send (mailto)</button>
+          <button type="button" id="copy-email" class="btn ghost">Copy email</button>
+        </div>
+      </form>
+
+      <p class="muted">Or email: <span id="email">hello@azizrady.com</span></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> azizrady — <a href="https://github.com/azizrady" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
